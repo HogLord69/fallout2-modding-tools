@@ -1,0 +1,100 @@
+{
+  "_comment": [
+    "Asset source installs. ALL are treated as strictly READ-ONLY - nothing in",
+    "this project ever writes to them. Paths came from the Phase 1 inventory",
+    "(2026-08-26).",
+    "",
+    "'credit' is what will end up in ASSETS.md and, eventually, the release",
+    "credits file. Fill it in properly before anything ships publicly; several",
+    "of these projects expect to be asked, not just cited.",
+    "",
+    "'derived' marks a tree this project GENERATES from a client in a format the",
+    "tools cannot read directly (fonline2: raw RGBA zips -> FRMs). Its 'path' is",
+    "that generated tree (git-ignored, rebuild with the named tool); the client",
+    "it comes from ('client') is still strictly read-only. A derived source is",
+    "never counted as art we already own. 'overlay': 'foc' means its lists are",
+    "the FOC base's entries followed by new ones, so ids inside the base range",
+    "mean the same thing as in FOC."
+  ],
+  "fo2": {
+    "project": "Fallout 2 (GOG 1.02d) + Restoration Project Unofficial 2.4.33",
+    "path": "F:\\GOG Games\\Fallout 2",
+    "credit": "Black Isle / Interplay; RP by killap, RPU maintained by BGforge. killap's source readme asks for a mention in the readme of derived work.",
+    "notes": "This is what base/ was built from. Usually read the base copy instead."
+  },
+  "fo1": {
+    "project": "Fallout (GOG), with the High Resolution Patch",
+    "path": "F:\\GOG Games\\Fallout",
+    "credit": "Interplay / Black Isle. Read for reference (map layout survey); nothing ported.",
+    "notes": "MASTER.DAT / CRITTER.DAT are DAT1 archives (foclib/dat1.py). Map version 19."
+  },
+  "sonora": {
+    "project": "Fallout: Sonora (Extended Release), English-patched",
+    "path": "C:\\Fallout Sonora (Extended Release)",
+    "credit": "Fallout: Sonora (2020-2021) by Alexander \"BLACK DESIGNER\" Poshelyuzhin (design, scripting, 3D, maps, text) and Alexander \"Red888guns\" Berezin (3D, critters, talking heads), with Osman \"Wolfram\" Adzhiusmanov, Grigory Sokolov, Denis \"MASTER\" Voloshin, Dmitry Kuznetsov, Foxx (installer, HRP/sfall) and Lexx (per data/text/english/CREDITS.TXT). This Extended Release is Foxx's unofficial build; its license.txt allows personal, non-commercial use only. English text is the user's own localization project. Ask before a public release.",
+    "notes": "Largest scenery set of the TCs here: 2377 scenery protos, 9911 FRMs."
+  },
+  "nevada": {
+    "project": "Fallout: Nevada (Expansion Version), English-patched",
+    "path": "C:\\Fallout Nevada (Expansion Version)",
+    "credit": "Fallout: Nevada (2009-2015), lead Alexander \"BLACK DESIGNER\" Poshelyuzhin (scripts, design, art, 3D), engine tweaks Denis \"Master\" Voloshin, promo Anton \"SAMIRAKUS\" Smirnov, additional graphics Osman \"Wolfram\" Ajiusmanov, Alexey Osadchiy, X'IL, Pixote, Mr.Stalin, Dmitriy Yermak, Pyran, Foxx (per data/text/english/CREDITS.TXT). English text is the user's own localization project. Ask before a public release.",
+    "notes": "786 item protos and 486 critter protos - the richest item source."
+  },
+  "olympus": {
+    "project": "Olympus 2207 (Full Edition)",
+    "path": "C:\\Olympus 2207 (FE)",
+    "credit": "Olympus 2207 v1.2, Nebesa Games 2010-2015: Artem \"Rainman\" Samoilov (lead design), Alexander \"Saur\" Berezin (lead artist), Sergey \"Zoomer\" Bokarev (dialogue, design), Elena Samoilova; English translation by keyboard gecko (per data/text/english/credits.txt). This Full Edition is Foxx's unofficial build; its license.txt allows personal, non-commercial use only. Ask before a public release.",
+    "notes": "11383 FRMs, 2959 scenery protos - the best art source on this machine."
+  },
+  "resurrection": {
+    "project": "Fallout: Resurrection (Full Edition), English-patched",
+    "path": "C:\\Fallout Resurrection (FE)",
+    "credit": "Fallout 1.5: Resurrection, by the Resurrection team (http://resurrection.cz/en; see !Docs/fores_readme.txt). Individual credits are in the game's credits video, not in a text file. Ask before a public release.",
+    "notes": "840 critter protos - the richest critter source."
+  },
+  "sotj": {
+    "project": "Fallout: Story of the Jackal (English)",
+    "path": "C:\\Fallout-SotJ",
+    "credit": "Fallout: Story of the Jackal, by Foxx; text editing Rokoo; English localization HogLord; uses materials by Mr.Stalin, .pixote., Josan12, Rainman, Red888Guns, BlackDesigner, burner1024, Goat_Boy, deadlus and others (per data/text/english/credits.txt). Ask before a public release.",
+    "notes": ""
+  },
+  "yesterday": {
+    "project": "Fallout Yesterday 0.6.5 (Van Buren)",
+    "path": "F:\\Fallout yesterday",
+    "credit": "Fallout Yesterday, a Van Buren remake in the Fallout 2 engine, by PJ & Co (README.md; Nexus Mods Fallout 2 mod 91). Players must own Fallout 1, Fallout 2 and Fallout Tactics. Ask before a public release.",
+    "notes": "Ships 826 .ssl sources and 67 headers under patch001.dat\\Scripts\\source - the best place on this machine to read real SSL idioms."
+  },
+  "nevada_extended": {
+    "project": "Nevada Extended Mod 2.0.3.4 (Mr.Stalin)",
+    "path": "C:\\Nevada Mod (Extended)",
+    "credit": "Nevada Extended Mod 2.0.3.4 by Mr.Stalin, built on Fallout: Nevada (credit the Nevada team as well, see 'nevada'). Ask before a public release.",
+    "notes": "Older, separate mod. Uses Patch000/001.dat, no master.dat. Patch000/001.dat with no master.dat; GameIndex accepts this layout since 2026-08-26."
+  },
+  "fonline3": {
+    "project": "FOnline 3 (client, v6.5)",
+    "path": "C:\\Users\\adamn\\Downloads\\FO3full_v_6_5",
+    "credit": "TODO - FOnline 3 team plus many individual community artists. Provenance inside a community art pack is mixed; check per asset before shipping anything from here.",
+    "notes": "ART ONLY. fallout.dat is a readable DAT2 with 16,395 entries: 12,013 FRMs, full critter animation sets (.fr0-.fr5), 1,361 ACM sounds. Contains NO maps - FOnline keeps maps server-side and uses text .fomap anyway, which is a different format entirely, so this source can never feed the fragment corpus."
+  },
+  "fonline2": {
+    "project": "FOnline 2 (Season 4 client), converted to a Fallout overlay by tools/fonline2_source.py",
+    "path": "F:\\FOCMod\\build\\fonline2_src",
+    "client": "C:\\Users\\adamn\\Downloads\\Fonline2 Beta\\Fonline2 Beta",
+    "derived": true,
+    "overlay": "foc",
+    "credit": "TODO - FOnline 2 (fonline2.com, Season 4 client) and the many community artists whose work it carries; provenance inside the pack is mixed, so check per asset before shipping anything from here. Its music albums are third-party fan work and are not converted. Ask before a public release.",
+    "notes": "ART ONLY, and only what we do not already own: tools/fonline2_source.py skips every picture that exists in FOC, Fallout 1/2 or any TC (by pixels, not name). No maps or protos in the client; protos here are generated templates. Static walls/scenery have no placement offsets in the client, so theirs are estimated (build/fonline2/catalog.csv says which). Tiles are browse-only (4096-slot limit)."
+  },
+  "rpu_talking_heads": {
+    "project": "RPU - Talking Heads Addon 3.7.1 (Nexus Mods, Fallout 2 mod 45)",
+    "path": "C:\\Users\\adamn\\Downloads\\NexusMods\\RPU - Talking Heads Addon-45-3-7-1716325907.zip (talking_heads.dat inside)",
+    "credit": "TODO - Goat Boy. His readme also credits TPOl7uHKA, MarsPistol, Prodlimen, TactaGhoul, Archeria/Lexx/yiit/darkmyth78 for armour models. Ask before a public release.",
+    "notes": "174 3D-rendered talking heads for vanilla NPCs; ported one at a time by tools/port_head.py."
+  },
+  "owner_callum_photos": {
+    "project": "Owner-supplied photos of an armored desert ranger figure (Callum's talking head)",
+    "path": "art\\heads_src\\callum",
+    "credit": "TODO - these look like product photos of a licensed action figure; confirm rights or credit before a public release.",
+    "notes": "Five head-turn photos; built into rwcal* by tools/make_head.py."
+  }
+}
